@@ -5,6 +5,9 @@ public class Guitar extends Instrument {
 
     private int numberOfStrings;
 
+
+    public Guitar() { }
+
     public Guitar(String brand) {
         super(brand);
     }
@@ -18,7 +21,6 @@ public class Guitar extends Instrument {
     // Mit @ = Annotation
     @Override
     public void play() {
-
         System.out.println("Smoke on the water!");
     }
 

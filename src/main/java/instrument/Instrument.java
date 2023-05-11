@@ -2,21 +2,27 @@ package instrument;
 
 import java.util.Objects;
 
+// Gibt vor wie jedes Instrument sein soll
+// Welche Eigenschaft soll _jedes_ Instrument haben z.B.?
+// Wir können KEINE Instanzen einer abstrakten Klasse erstellen
+// Einfacher gesagt =
+// Wir können KEIN Objekt einer abstrakten Klasse erstellen
 public abstract class Instrument {
 
     // brand = Marke (dt.)
     private String brand;
 
-    public Instrument() {
-
-    }
+    public Instrument() { }
 
     public Instrument(String brand) {
-//        System.out.println("Hier wird ein neues, schönes Instrument gebaut");
         this.brand = brand;
     }
 
-    // Kann Töne machen
+    // Instrument kann Töne machen
+    // ABER, wie die Töne klingen, ist HÖCHST spezifisch
+    // Deshalb mach ich die Methode abstrakt
+    // d.h. JEDE Kindklasse (die nicht abstrakt ist)
+    // MUSS die abstrakte Methode SELBER implementieren
     public abstract void play();
 
     public String getBrand() {

@@ -1,6 +1,4 @@
-import instrument.Guitar;
-import instrument.Instrument;
-import instrument.Ukulele;
+import instrument.*;
 
 public class Main {
 
@@ -16,5 +14,10 @@ public class Main {
         guitar.play();
         guitarWith7Strings.play();
 
+        Piano piano = new Piano();
+        piano.play();
+
+        Guitar eGuitar = new ElectricGuitar();
+        eGuitar.play();
     }
 }
