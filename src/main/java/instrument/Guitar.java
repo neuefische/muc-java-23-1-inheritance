@@ -1,5 +1,7 @@
 package instrument;
 
+import recording.Audible;
+
 // Das Stichwort = "extends" = Erbt von Instrument
 public class Guitar extends Instrument {
 
@@ -24,4 +26,8 @@ public class Guitar extends Instrument {
         System.out.println("Smoke on the water!");
     }
 
+    @Override
+    public void makeSound() {
+        play();
+    }
 }

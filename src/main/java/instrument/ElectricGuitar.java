@@ -1,6 +1,8 @@
 package instrument;
 
-public class ElectricGuitar extends Guitar{
+import recording.RecordingStudio;
+
+public class ElectricGuitar extends Guitar {
 
     // Standardkonstruktor - kann man nicht sehen, ist aber da/ wird erzeugt
     public ElectricGuitar() {
@@ -15,4 +17,6 @@ public class ElectricGuitar extends Guitar{
         super.play();
         System.out.println("WAKE UPPPPPPP GRABB ASDASDAU");
     }
+
+    // Warum braucht man hier kein makeSound
 }

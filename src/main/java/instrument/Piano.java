@@ -11,4 +11,9 @@ public class Piano extends Instrument {
     public void play() {
         System.out.println("In the enddddd!");
     }
+
+    @Override
+    public void makeSound() {
+        play();
+    }
 }

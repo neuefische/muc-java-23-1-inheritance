@@ -1,5 +1,7 @@
 package instrument;
 
+import recording.Audible;
+
 import java.util.Objects;
 
 // Gibt vor wie jedes Instrument sein soll
@@ -7,7 +9,7 @@ import java.util.Objects;
 // Wir können KEINE Instanzen einer abstrakten Klasse erstellen
 // Einfacher gesagt =
 // Wir können KEIN Objekt einer abstrakten Klasse erstellen
-public abstract class Instrument {
+public abstract class Instrument implements Audible {
 
     // brand = Marke (dt.)
     private String brand;

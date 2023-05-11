@@ -6,4 +6,9 @@ public class Ukulele extends Instrument {
     public void play() {
         System.out.println("Lululu Ukulele sound");
     }
+
+    @Override
+    public void makeSound() {
+        play();
+    }
 }
