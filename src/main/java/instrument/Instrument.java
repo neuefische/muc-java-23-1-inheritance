@@ -2,7 +2,7 @@ package instrument;
 
 import java.util.Objects;
 
-public class Instrument {
+public abstract class Instrument {
 
     // brand = Marke (dt.)
     private String brand;
@@ -17,10 +17,7 @@ public class Instrument {
     }
 
     // Kann Töne machen
-    public void play() {
-        // Wolf of Wallstreet mäßig
-        System.out.println("Mhm mhmmmm!");
-    }
+    public abstract void play();
 
     public String getBrand() {
         return brand;

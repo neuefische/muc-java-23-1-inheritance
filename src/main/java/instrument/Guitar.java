@@ -18,6 +18,7 @@ public class Guitar extends Instrument {
     // Mit @ = Annotation
     @Override
     public void play() {
+
         System.out.println("Smoke on the water!");
     }
 

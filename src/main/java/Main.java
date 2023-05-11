@@ -1,10 +1,12 @@
 import instrument.Guitar;
 import instrument.Instrument;
+import instrument.Ukulele;
 
 public class Main {
 
     public static void main(String[] args) {
-        Instrument ukulele = new Instrument();
+//        FUNKTIONIERT NICHT! -> WIE SOLL ICH EIN "INSTRUMENT" BAUEN?
+        Instrument ukulele = new Ukulele();
         ukulele.play();
 
 //        Instrument guitar = new Instrument("Ibanez");
