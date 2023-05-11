@@ -12,6 +12,7 @@ public class Instrument {
     }
 
     public Instrument(String brand) {
+//        System.out.println("Hier wird ein neues, schönes Instrument gebaut");
         this.brand = brand;
     }
 
